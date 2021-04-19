@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.kelvin.config;
+package com.udemy.spring.springselenium.kelvin.scope;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
@@ -10,4 +10,5 @@ public class BrowserScopePostProcessor implements BeanFactoryPostProcessor {
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         beanFactory.registerScope("browserscope", new BrowserScope());
     }
+
 }

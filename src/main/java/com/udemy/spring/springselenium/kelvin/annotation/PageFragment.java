@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Component
 @Scope("prototype")
 @Documented
-@Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
 public @interface PageFragment {
 }

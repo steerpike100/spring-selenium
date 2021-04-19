@@ -1,6 +1,7 @@
 package com.udemy.spring.springselenium.kelvin.config;
 
-import com.udemy.spring.springselenium.kelvin.annotation.*;
+import com.udemy.spring.springselenium.kelvin.annotation.LazyConfiguration;
+import com.udemy.spring.springselenium.kelvin.annotation.ThreadScopeBean;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Profile;
 import java.net.URL;
 
 @Profile("remote")
+@LazyConfiguration
 public class RemoteWebDriverConfig {
 
     @Value("${selenium.grid.url}")

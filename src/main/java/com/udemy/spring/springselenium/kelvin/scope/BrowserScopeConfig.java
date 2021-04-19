@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.kelvin.config;
+package com.udemy.spring.springselenium.kelvin.scope;
 
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.Bean;
@@ -11,4 +11,5 @@ public class BrowserScopeConfig {
     public static BeanFactoryPostProcessor beanFactoryPostProcessor(){
         return new BrowserScopePostProcessor();
     }
+
 }
